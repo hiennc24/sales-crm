@@ -1,0 +1,60 @@
+@import "../../../../styles/variables.scss";
+
+.recent-news {
+  margin-bottom: 20px;
+
+  .recent-news-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    .recent-text {
+      font-weight: bold;
+      font-size: 18px;
+      color: #414346;
+    }
+
+    .recent-all {
+      font-weight: normal;
+      font-size: 14px;
+      color: #414346;
+      cursor: pointer;
+    }
+  }
+
+  .recent-news-list {
+    .recent-news-item {
+      padding: 12px 10px;
+      background-color: #fff;
+      border-radius: 10px;
+
+      .recent-news-info {
+        h4 {
+          margin-bottom: 0;
+          color: #4e596f;
+          font-weight: 500;
+          font-size: 16px;
+          max-width: 95%;
+        }
+
+        p {
+          margin-bottom: 0;
+          color: #414346;
+          max-width: 95%;
+        }
+      }
+
+      .recent-news-action {
+        span {
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .recent-news-item+.recent-news-item {
+      margin-top: 10px;
+    }
+  }
+}

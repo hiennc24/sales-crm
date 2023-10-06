@@ -1,0 +1,188 @@
+@import "../../../../styles/variables.scss";
+
+.short-cuts {
+  margin-top: 30px;
+
+  .title {
+    color: $text-grey;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .shortcuts-action-wrapper {
+    margin-top: 10px;
+
+    .shortcuts-action-row {
+      padding: 5px 0;
+      cursor: pointer;
+      transition: 0.3s all;
+      padding-left: 10px;
+      border-radius: 10px;
+      .wrapper {
+        display: flex;
+        align-items: center;
+      }
+      &:hover {
+        background-color: #eaeaea7a;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .shortcuts-action-icon {
+        margin-right: 20px;
+
+        & svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      .shortcuts-action-text span {
+        color: $text-grey;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .shortcuts-tool {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .btn-shortcuts-tool {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 5px 10px rgba(110, 123, 148, 0.05);
+      border-radius: 10px;
+      width: 100%;
+      padding: 20px 10px;
+
+      .shortcuts-tool-icon {
+        margin-right: 10px;
+
+        & img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .shortcuts-tool-text {
+        color: $text-grey;
+        font-weight: 500;
+        font-size: 16px;
+        top: 2px;
+      }
+    }
+  }
+}
+
+.menu-tool-drawer {
+  .ant-drawer-header {
+    border-bottom: 2px solid #e9f0f4;
+  }
+
+  .ant-drawer-body {
+    padding: 0 0 24px;
+  }
+
+  .header-drawer {
+    svg {
+      width: 18px;
+      height: 18px;
+      border-radius: 5px;
+      border: 1.5px solid #7b7f86;
+      cursor: pointer;
+    }
+
+    img {
+      margin-left: 40px;
+    }
+  }
+
+  .ant-list-items {
+    .ant-list-item {
+      cursor: pointer;
+      transition: 0.2s all;
+      border-bottom: 1px solid #e9f0f4;
+      padding: 0;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        padding: 15px 0;
+        padding-left: 10px;
+        width: 100%;
+        color: $text-grey;
+        font-size: 16px;
+
+        svg {
+          width: 23px;
+          height: 23px;
+        }
+
+        .menu-tool-item-text {
+          position: relative;
+          top: 2px;
+          margin-left: 10px;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background: #00dfff;
+
+        a {
+          color: #fff;
+
+          & > span {
+            path {
+              stroke: #fff;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      &.active {
+        background: #00dfff;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      .menu-tool-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 12px;
+
+        a > span {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .ant-divider {
+    margin-bottom: 20px;
+  }
+
+  .btn-logout {
+    padding: 10px 2px;
+    color: $text-grey;
+    font-size: 16px;
+    cursor: pointer;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

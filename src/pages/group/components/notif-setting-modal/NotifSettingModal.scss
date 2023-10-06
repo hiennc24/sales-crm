@@ -1,0 +1,64 @@
+@import "../../../../styles/variables.scss";
+
+.setting-modal {
+  border-radius: 10px;
+
+
+  .modal-title {
+    margin-bottom: 0;
+    text-align: center;
+    color: $text-grey;
+  }
+
+  .ant-btn {
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(110, 123, 148, 0.103);
+  }
+
+  .ant-btn-primary {
+    background-color: #00dfff;
+    color: $dark-blue;
+  }
+
+  .ant-radio-group {
+    width: 100%;
+
+    & .ant-space {
+      width: 98%;
+      margin: 10px 0;
+      border-bottom: 1px solid #e9f0f4;
+      padding-bottom: 20px;
+
+      & .ant-radio-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .radio-item {
+    & p {
+      margin-bottom: 0;
+      color: $text-grey;
+    }
+
+    & small {
+      color: $text-grey;
+      opacity: 0.6;
+    }
+  }
+
+  .noti-switch {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+}

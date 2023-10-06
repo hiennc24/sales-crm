@@ -1,0 +1,31 @@
+const PAGES = {
+  login: "/login",
+  register: "/register",
+  home: "/",
+  groupWork: "/group-work",
+  groupDetail: "/group-work/:id",
+  groupSearch: "/group-work/:id/search-posts-group",
+  forgotPass: "/forgot-password",
+  about: "/about",
+  terms: "/terms-of-service",
+  setting: "/setting",
+  messagesBox: "/messages-box",
+  splash: "/splash",
+  myProfile: "/profile",
+  userProfile: "/profile/:id",
+  editProfile: "/edit-profile",
+  search: "/search-page",
+  chat: "/chat",
+  postDetail: "/detail/:type/:id",
+  inviteAccount: "/invite-account",
+  verifyInvite: "/verify",
+  verifyLink: "/verify-link",
+  listNotification: "/notifications",
+  event: "/event",
+  eventDetail: "/event/:id",
+  eventEdit: "/event/:id/edit",
+  calendar: "/calendar",
+  settingNoti: "/setting"
+};
+
+export default PAGES;

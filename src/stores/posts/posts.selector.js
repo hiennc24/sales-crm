@@ -1,0 +1,15 @@
+export const selectListPosts = (state) => state.get('posts').posts;
+export const selectInternalPosts = (state) => state.get('posts').internalPosts;
+export const selectTodoPosts = (state) => state.get('posts').todoPosts;
+export const selectEventPosts = (state) => state.get('posts').eventPosts;
+export const selectVotePosts = (state) => state.get('posts').votePosts;
+export const selectIsLoadMore = (state) => state.get('posts').isLoadMore;
+export const selectListHotPosts = (state) => state.get('posts').hotPosts;
+export const selectChangeDelete = (state) => state.get('posts').changeDelete;
+export const selectPriorityType = (state) => state.get('posts').priorityType;
+export const selectListComment = (state) => state.get('posts').comments;
+export const selectListAttentionPosts = (state) => state.get('posts').attentionPosts;
+export const selectListConsideredPosts = (state) => state.get('posts').consideredPosts;
+export const selectIsLoadMoreHotPosts = (state) => state.get('posts').isLoadMoreHostPost;
+export const selectIsLoadMoreAttentionPosts = (state) => state.get('posts').isLoadMoreAttentionPost;
+export const selectIsLoadMoreConsideredPosts = (state) => state.get('posts').isLoadMoreConsideredPost;

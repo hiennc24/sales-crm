@@ -1,0 +1,83 @@
+@import "../../../../styles/variables.scss";
+
+.my-task {
+  .my-task-inner {
+    padding: 12px 17px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(62, 73, 84, 0.04);
+    margin: 0 2px;
+
+    .my-task-header {
+      margin-bottom: 20px;
+
+      .my-task-title {
+        color: $dark-blue;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      .btn-union {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $dark-blue;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+        box-shadow: 0px 5px 15px rgba(2, 47, 150, 0.1);
+      }
+
+      .btn-filter {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $text-grey;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .my-task-body {
+      .my-task-item {
+        padding: 5px 0;
+        border-bottom: 1px solid #e9f0f4;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .task-detail {
+          font-size: 16px;
+          color: $text-color;
+        }
+
+        .task-statistic {
+          .task-number {
+            font-weight: 500;
+            font-size: 22px;
+            color: $dark-blue;
+            margin-right: 12px;
+          }
+
+          .task-filter {
+            width: 25px;
+            height: 25px;
+            background-color: #e9f0f4;
+            color: $text-grey;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}

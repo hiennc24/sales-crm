@@ -1,0 +1,127 @@
+@import "../../styles/variables.scss";
+
+.notification-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  position: relative;
+  background-color: #F3F4F6;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &.read {
+    background-color: white;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .notification-item-avatar {
+    position: relative;
+
+    .span-type {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .notification-item-name {
+    width: 95%;
+    .name {
+      color: #3296BD;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .full-name {
+      color: #3296BD;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .content {
+      color: #3296BD;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .time {
+      margin-left: 12px;
+      color: #414346;
+      font-size: 12px;
+    }
+  }
+
+  .notification-item-info {
+    .time{
+      color: #272727;
+      font-weight: 400;
+      opacity: 0.6;
+      font-size: 12px;
+      font-style: italic;
+      text-transform: capitalize;
+    }
+  }
+
+  .notification-item-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+    .circle{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #0498c1;
+    }
+  }
+}
+
+.noti-item-dropdown-overlay {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(65, 67, 70, 0.1);
+  overflow: hidden;
+
+  .ant-menu-inline,
+  .ant-menu-vertical,
+  .ant-menu-vertical-left {
+    border-right: none !important;
+  }
+
+  .ant-menu-item {
+    color: #414346;
+    margin-bottom: 4px;
+
+    .noti-item-dropdown-text {
+      margin-left: 10px;
+      color: #414346;
+    }
+
+    &:hover {
+      .ant-menu-title-content {
+        color: #414346;
+      }
+
+      background-color: #f6f9fb;
+    }
+  }
+}
+.item-viewed {
+  background-color: #FFF;
+  &:hover{
+    background-color: #f5f5f5de;
+  }
+}

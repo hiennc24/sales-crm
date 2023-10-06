@@ -1,0 +1,41 @@
+.album-group-page {
+  margin-top: 10px;
+  .title-image{
+    background-color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .item-right {
+    text-align: right;
+    margin-bottom: 18px;
+  }
+
+  .btn-add-file-album {
+    background: #00dfff;
+    box-shadow: 0px 2px 7px rgba(9, 86, 163, 0.1);
+    border-radius: 5px;
+    height: 38px;
+    width: 148px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #414346;
+  }
+
+  .img-holder {
+    .ant-image {
+      border-radius: 10px;
+
+      .ant-image-mask {
+        border-radius: 10px;
+      }
+
+      .ant-image-img {
+        object-fit: cover;
+      }
+    }
+  }
+}

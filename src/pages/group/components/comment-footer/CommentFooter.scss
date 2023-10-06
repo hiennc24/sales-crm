@@ -1,0 +1,129 @@
+.list-comment {
+  border-top: 1px solid #4143461a;
+
+  .post-interative {
+    // display: flex;
+    // align-items: center;
+
+    // & div {
+    //     // margin-right: 100px;
+    //     display: flex;
+    //     align-items: center;
+
+    //     &>p {
+    //         margin-bottom: 0;
+    //         margin-left: 10px;
+    //         font-size: 16px;
+    //     }
+    // }
+    // border-top: 1px solid #4143461a;
+    .share-wrapper,
+    .comment-wrapper,
+    .reaction-wrapper {
+      padding: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #eeeeee;
+      }
+      p {
+        margin-bottom: 0;
+        margin-left: 16px;
+        color: #414346;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .comment-input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    .comment-input {
+      background-color: #eeeeee;
+      border-radius: 20px;
+      border: 1px solid #eeeeee;
+      height: 40px;
+      input {
+        background-color: #eeeeee;
+      }
+    }
+  }
+
+  .comment-wrapper {
+    cursor: pointer;
+  }
+
+  .list-comment {
+    // margin-top: 20px;
+    .title-comment-list {
+      font-weight: bold;
+      font-size: 14px;
+      color: #262b32d9;
+      margin-top: 10px;
+    }
+
+    .comment-item {
+      margin: 10px;
+      display: flex;
+      align-items: flex-start;
+      padding-top: 5px;
+
+      span {
+        font-size: 14px;
+        color: #414346;
+      }
+      .comment-item-content {
+        background: #efefef;
+        border-radius: 5px;
+        padding: 5px 10px;
+        flex: 1;
+      }
+    }
+
+    .user-name {
+      margin: 0px;
+      color: #414346;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .item-center {
+      text-align: center;
+
+      .btn-load-more {
+        background: transparent;
+        border: none;
+      }
+    }
+
+    .action-like-cmt {
+      cursor: pointer;
+      .like-cmt {
+        height: 15px;
+        width: 15px;
+      }
+
+      .count-cmt {
+        margin-left: 5px;
+        color: #414346;
+      }
+    }
+  }
+
+  .avatar-wrapper {
+    .avt-comment {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+
+    .avt-comment-item {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,462 @@
+@import "../../../../styles/variables.scss";
+
+.group-timeline {
+  border-radius: 10px;
+  margin-bottom: 19px;
+
+  .empty-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-overview {
+    width: 50%;
+    position: relative;
+    .ant-image {
+      width: 100%;
+      opacity: 0.5;
+      background-color: gray;
+      .image-content-post {
+        width: 100%;
+      }
+    }
+    .count-img-preview {
+      position: absolute;
+      left: 50%;
+      top: 30%;
+      font-size: 36px;
+      color: #414346;
+      font-weight: bolder;
+    }
+  }
+  .avt-group {
+    height: 318px;
+    width: 100%;
+  }
+
+  .content-info {
+    margin-top: 7px;
+    padding: 10px 14px;
+  }
+
+  .group-name {
+    font-size: 26px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    font-weight: bold;
+    color: #4e596f;
+  }
+
+  .horizontal-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18px;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #e9f0f4;
+    padding-bottom: 19px;
+  }
+
+  .item-privacy {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 14px;
+      // line-height: 20px;
+      letter-spacing: -0.24px;
+      // font-weight: bolder;
+      color: #414346;
+    }
+  }
+
+  .list-avt-member {
+    display: flex;
+    align-items: center;
+
+    .content-avt {
+      width: 100px;
+    }
+
+    .avt-member {
+      margin-right: -55px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      background-color: #707070;
+    }
+
+    .avt-first {
+      margin-left: 60px;
+    }
+  }
+
+  .btn-invite-members {
+    height: 32px;
+    padding: 0px 15px;
+    background: #414346;
+    border-radius: 10px;
+    margin-left: 10px;
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+      margin-left: 10px;
+      color: #ffffff;
+    }
+  }
+
+  .tabs-select {
+    display: flex;
+    align-items: center;
+
+    .tab-item {
+      font-weight: 500;
+      font-size: 14px;
+      margin-right: 20px;
+      color: #6e7b94;
+    }
+
+    .active {
+      color: #414346 !important;
+    }
+  }
+
+  .btn-more-square {
+    border: 0px solid;
+    padding: 0px;
+  }
+
+  .edit-img-group {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 121px;
+    height: 32px;
+    background: #6e7b94;
+    opacity: 0.8;
+    border-radius: 5px;
+    font-family: Open Sans;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .ant-upload {
+      color: #ffffff;
+    }
+
+    .ant-upload-list {
+      display: none;
+    }
+  }
+
+  .detail-post {
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    color: $text-grey;
+    box-shadow: 0px 4px 6px rgba(62, 73, 84, 0.04);
+
+    & .post-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      & :first-child {
+        display: flex;
+        align-items: center;
+      }
+
+      & .more-actions {
+        display: flex;
+        align-items: center;
+
+        & > img {
+          margin-left: 10px;
+        }
+      }
+
+      & .avatar-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      & .name-wrapper {
+        display: flex;
+        align-items: center;
+
+        & h4 {
+          font-size: $font-size-h6;
+          color: $dark-blue;
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        & p {
+          margin-bottom: 0;
+          margin-left: 10px;
+          font-size: 16px;
+        }
+
+        .group-name {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .user-name {
+          color: #292d32d9;
+          font-size: 16px;
+          font-weight: bolder;
+          margin-left: 0px;
+          cursor: pointer;
+        }
+      }
+
+      & .post-status {
+        display: flex;
+        align-items: center;
+
+        & > img {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    & .post-content {
+      margin-top: 20px;
+      color: #414346;
+
+      .post-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: #262b32d9;
+      }
+
+      & > h4 {
+        color: $dark-blue;
+        font-size: $font-size-h6;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      & > p {
+        margin-bottom: 25px;
+      }
+
+      & .tags {
+        display: flex;
+        align-items: center;
+
+        & > p {
+          margin-right: 15px;
+          margin-bottom: 0;
+        }
+      }
+
+      & .post-images {
+        margin: 10px 0;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      & .post-interative {
+        display: flex;
+        align-items: center;
+
+        & div {
+          margin-right: 100px;
+          display: flex;
+          align-items: center;
+
+          & > p {
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .item-horizontal {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon-menu {
+  margin-right: 18px;
+}
+
+.ant-image {
+  
+  .image-content-post {
+    margin: 5px;
+    height: 200px;
+    // width: 100%;
+  }
+}
+
+.item-horizontal {
+  display: flex;
+  align-items: center;
+
+  h4 {
+    margin: 0px;
+  }
+
+  .tags-with {
+    margin: 0px 3px;
+    display: flex;
+    strong {
+      color: #0956a3;
+      font-size: 16px;
+      // margin-right: 6px;
+    }
+  }
+
+  .color-primary {
+    color: #00dfff;
+  }
+}
+
+.title-location {
+  margin-left: 10px;
+}
+
+.title-dialog-edit-post {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  text-align: center;
+  color: #414346;
+}
+
+.list-img-view {
+  display: flex;
+  flex-wrap: wrap;
+
+  .image-full {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    &:first-child {
+      border-radius: 10px 10px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .img-under {
+    width: 33.33%;
+  }
+
+  .img-under-50 {
+    width: 50%;
+  }
+
+  .img-under-last {
+    position: relative;
+    width: 33.33%;
+    cursor: default;
+    .image-full {
+      width: 100%;
+      height: 100%;
+    }
+
+    .view-short {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      font-size: 45px;
+      background-color: #70707099;
+      color: #fff;
+    }
+  }
+
+  .img-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #70707099;
+    z-index: 2;
+
+    .btn-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      // background-color: white;
+      border-radius: 3px;
+      &:hover{
+        background-color: #969696;
+      }
+      img {
+        height: 30px;
+      }
+    }
+
+    .box-img {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+
+      .btn-change-img {
+        background: transparent;
+        border: none;
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+.group-time-line-new{
+  .new-post-container-social-new{
+  overflow: visible;
+  // margin-top: 30px;
+  .post-wrapper{
+    margin: 0;
+    .post-header{
+      padding: 10px;
+      background-color: #0498c1;
+      border-radius: 6px 6px 0 0;
+      margin-top: -60px;
+    }
+    .post-content{
+      padding: 20px;
+      margin: 0 !important;
+      background-color: #fff;
+    }
+    .post-footerr{
+      padding: 20px;
+      margin: 0 !important;
+      background-color: #fff;
+    }
+  }
+}
+}

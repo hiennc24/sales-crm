@@ -1,0 +1,288 @@
+@import "../../styles/variables.scss";
+
+.invite-account-page {
+  background-color: #f6f9fb;
+  // padding: 120px 34px 40px;
+  // min-height: 100vh;
+
+  .invite-letter-wrapper {
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #262B32;
+      margin-bottom: 20px;
+
+    }
+
+    .invite-options-wrapper {
+      .ant-radio-group {
+        width: 100%;
+
+        & .invite-item {
+          background: #FFFFFF;
+          box-shadow: 0px 5px 10px rgba(110, 123, 148, 0.05);
+          border-radius: 10px;
+          padding: 10px 17px;
+        }
+
+        .ant-space {
+          width: 100%;
+
+          .ant-space-item {
+            margin-bottom: 8px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+
+          .ant-radio-wrapper {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+
+            &>span {
+              &:nth-child(2) {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: $text-grey;
+                display: block;
+                width: 100%;
+              }
+            }
+
+            .ant-radio-inner {
+              width: 20px;
+              height: 20px;
+              border-color: #0498C1;
+
+              &::after {
+                width: 12px;
+                height: 12px;
+                background-color: #0498C1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .invite-content-wrapper {
+    // padding: 16px 0 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(110, 123, 148, 0.05);
+    border-radius: 10px;
+
+    .invite-content-header {
+      padding: 16px;
+      // padding-bottom: 16px;
+      border-bottom: 1px solid #e9f0f4;
+      background-color: #0498c1;
+      border-radius: 15px 15px 0 0;
+
+      .title {
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        color: white;
+
+        img {
+          margin-right: 18px;
+          filter: brightness(10.5);
+        }
+      }
+    }
+
+    .invite-content-body {
+      padding: 25px 16px 10px;
+
+      .invite-quick {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 26px;
+
+        span {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          display: flex;
+          align-items: flex-end;
+          color: #414346;
+        }
+
+        .custom-switch.ant-switch-checked {
+          background: #0498C1;
+        }
+      }
+
+      .invite-link-wrapper {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 8px;
+
+        .invite-link-input {
+          width: 100%;
+
+          .invite-link-title {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #414346;
+          }
+
+          .input-invite {
+            padding: 10px 12px;
+            background: rgba(4, 152, 193, 0.1);
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 19px;
+            color: #414346;
+            border: none !important;
+            margin-top: 10px;
+          }
+
+          .ant-select{
+            margin-top: 10px;
+            padding: 6px 12px;
+            background: rgba(4, 152, 193, 0.1);
+            border-radius: 10px;
+            font-size: 16px;
+            line-height: 19px;
+            color: #414346;
+            border: none !important;
+            margin-top: 10px;
+            .ant-select-selector{
+              padding: 0 !important;
+            }
+            .ant-select-selection-overflow{
+              background-color: rgba(4, 152, 193, 0.1);
+              color: #414346;
+              border: none !important;
+            }
+          }
+        }
+
+        .btn-invite-link {
+          background: #FD830E;
+          border-radius: 10px;
+          font-size: 14px;
+          color: #FFFFFF;
+          border: none;
+          height: 40px;
+        }
+      }
+
+      .invite-change-link {
+        margin-top: 20px;
+
+        .text-change {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 19px;
+          color: #414346;
+        }
+
+        img {
+          margin-right: 10px;
+        }
+
+        span {
+          color: $text-grey;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      .invite-request-admin {
+        .ant-checkbox {
+          &.ant-checkbox-checked {
+            .ant-checkbox-inner {
+              background-color: #0498C1;
+            }
+
+            &::after {
+              border-color: #0498C1;
+            }
+          }
+        }
+
+        .ant-checkbox+span {
+          font-size: 14px;
+          line-height: 19px;
+          color: #414346;
+          padding-left: 12px;
+        }
+
+        .ant-checkbox-inner {
+          border-radius: 5px;
+          border-color: rgba(65, 67, 70, 0.6);
+        }
+
+        .ant-checkbox.ant-checkbox-checked {
+          .ant-checkbox-inner {
+            border-radius: 5px;
+            border-color: #0498C1;
+          }
+        }
+      }
+
+      .invite-email {
+        & .ant-form-item-label {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+          display: flex;
+          align-items: flex-end;
+          color: #414346;
+        }
+
+        & .input-invite-email {
+          background: #FFFFFF;
+          border: 1px solid rgba(65, 67, 70, 0.1);
+          box-sizing: border-box;
+          border-radius: 10px;
+          padding: 10px 12px;
+        }
+
+        
+      }
+      .add-icon {
+        cursor: pointer;
+        margin-left: 3px;
+      }
+
+      & .btn-invite-email {
+        background: #FD830E;
+        border-radius: 10px;
+        padding: 11px 40px;
+        height:40px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: none;
+        &:hover{
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .error {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+  }
+  .mt-2{
+    margin-top: 20px;
+  }
+}

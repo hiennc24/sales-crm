@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+
+.list-notification-page {
+  // min-height: calc(100vh - 34px);
+
+  .noti-dropdown {
+    // box-shadow: 0px 0px 25px rgba(78, 89, 111, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+
+    .noti-dropdown-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 15px;
+      background-color: #32a1c8;
+
+      h4 {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 0;
+        flex: 1;
+        // text-align: center;
+      }
+
+      .noti-dropdown-header-icon {
+        cursor: pointer;
+
+        span + span {
+          margin-left: 20px;
+
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .notification-item-avatar {
+      width: 32px;
+      height: 32px;
+    }
+
+    .notification-item-name {
+      .name {
+        font-size: 14px;
+        font-weight: bold;
+        color: #262b32;
+      }
+
+      .time {
+        font-size: 10px;
+        color: #414346;
+      }
+    }
+
+    .notification-item-info {
+      color: #262b32;
+      font-size: 12px;
+    }
+
+    .noti-dropdown-view-all {
+      margin-top: 12px;
+      padding: 0 15px;
+      text-align: right;
+      cursor: pointer;
+
+      span {
+        color: #4e596f;
+        font-weight: 500;
+        font-size: 12px;
+      }
+    }
+
+    .noti-dropdown-body {
+    }
+  }
+}

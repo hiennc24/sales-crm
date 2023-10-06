@@ -1,0 +1,79 @@
+@import "../../styles/variables.scss";
+
+.setting-noti-modal {
+  .ant-modal-title {
+    text-align: center;
+    color: #4e596f;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .ant-modal-close {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .ant-modal-header {
+    border-color: #e9f0f4;
+  }
+
+  .setting-noti-body {
+    padding: 28px 0 0;
+    .setting-noti-item + .setting-noti-item {
+      border-top: 1px solid #e9f0f4;
+    }
+    .setting-noti-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+
+      .setting-noti-item-text {
+        p {
+          margin-bottom: 0;
+          font-weight: 500;
+          font-size: 16px;
+          color: #4e596f;
+        }
+        span {
+          color: $text-grey;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .ant-modal-body {
+    padding: 10px 20px;
+  }
+  .ant-modal-footer {
+    border: 0;
+    padding-bottom: 30px;
+    .btn-cancel-setting-noti {
+      color: $text-grey;
+      font-weight: 500;
+      font-size: 18px;
+      width: 180px;
+      border-radius: 10px;
+      line-height: normal;
+      height: 40px;
+    }
+    .btn-cancel-setting-noti:hover {
+      color: #00dfff;
+      font-weight: 700;
+    }
+    .btn-ok-setting-noti {
+      color: #414346;
+      font-weight: 500;
+      font-size: 18px;
+      background: #00dfff;
+      box-shadow: 0px 5px 10px rgba(2, 47, 150, 0.1);
+      border-radius: 10px;
+      line-height: normal;
+      width: 180px;
+      height: 40px;
+      border-color: transparent;
+    }
+  }
+}

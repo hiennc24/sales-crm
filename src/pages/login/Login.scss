@@ -1,0 +1,86 @@
+.form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 27px 40px 20px 40px;
+  border-radius: 2px;
+}
+// .logo {
+//   margin: 24px 0px;
+// }
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after {
+  border-top: 1px solid rgba(39, 39, 39, 0.6);
+}
+.header-form {
+  .header-col-title {
+    display: flex;
+    align-items: center;
+    .header-title {
+      font-weight: bold;
+      font-size: 18px;
+      color: #272727CC;
+      margin-left: 24px;
+    }
+  }
+}
+.remember {
+  padding-left: 2%;
+}
+.forget-password {
+  color: #272727 !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px;
+}
+.btn-submit {
+  width: 100%;
+}
+.login-social {
+
+  .btn-social {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 56px;
+    border-radius: 2px;
+    border: 1px solid rgba(39, 39, 39, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-social-facebook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-social {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+
+  // .btn-google {
+  //   background-color: #272727;
+  //   border-radius: 2px;
+  //   height: 32px;
+  //   width: 100%;
+  //   border: none;
+  // }
+
+  // .btn-facebook {
+  //   background: #1877f2;
+  //   border-radius: 2px;
+  //   width: 100%;
+  //   height: 32px;
+  //   border: none !important;
+  // }
+  // .btn-zalo {
+  //   background-color: #fff;
+  //   border-radius: 2px;
+  //   height: 32px;
+  //   width: 100%;
+  //   border: 1px solid rgba(39, 39, 39, 0.3);
+  // }
+}

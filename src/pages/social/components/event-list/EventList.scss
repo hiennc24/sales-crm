@@ -1,0 +1,64 @@
+@import "../../../../styles/variables.scss";
+
+.event-list {
+  background-color: #fff;
+  color: $text-grey;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 6px rgba(62, 73, 84, 0.04);
+
+  & .header {
+    display: flex;
+    align-items: center;
+
+    & h4 {
+      color: $dark-blue;
+      font-size: $font-size-h6;
+      margin-left: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  & .content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(190, 190, 190);
+      border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgb(167, 167, 167);
+    }
+  }
+
+
+
+
+  & .event-box {
+    flex: 0 0 auto;
+    width: 170px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-top: 50px;
+    padding-left: 15px;
+    color: #fff;
+    background-position: center;
+  }
+}

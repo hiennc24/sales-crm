@@ -1,0 +1,31 @@
+.list_join_request {
+  border-radius: 2px !important;
+  .user-ctn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .btn__holder{
+      min-width: 90px;
+      padding-left: 5px;
+      .btn-accept-req{
+        background: #0498C1;
+        color: white; 
+        border-radius: 10px;
+        padding: 4px !important;
+      }
+      .btn-reject-req{
+        padding: 4px !important;
+        border-radius: 10px;
+        background: white;
+        box-shadow: none;
+        border-color: white;
+        color: #41434699;
+      }
+    }
+  }
+
+  .list-no-data{
+    text-align: center;
+    padding: 5px 0px;
+  }
+}

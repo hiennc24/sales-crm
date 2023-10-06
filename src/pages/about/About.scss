@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.about-page {
+  .about-board {
+    padding: 16px 0;
+    padding-bottom: 75px;
+    border-radius: 10px;
+    background-color: #fff;
+    .about-header {
+      border-bottom: 1px solid #e9f0f4;
+      padding-bottom: 8px;
+      padding-left: 20px;
+
+      .title {
+        margin-bottom: 0;
+        color: #262b32;
+        font-weight: 700;
+        font-size: 16px;
+      }
+    }
+    .about-body {
+      padding-left: 20px;
+      padding-top: 45px;
+      .main-row {
+        .title {
+          color: $dark-blue;
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        .desc {
+          line-height: 30px;
+          color: $text-grey;
+        }
+        .right-col {
+          display: flex;
+          align-items: center;
+        }
+      }
+      .main-row + .main-row {
+        margin-top: 50px;
+      }
+    }
+  }
+}

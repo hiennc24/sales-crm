@@ -1,0 +1,76 @@
+.participants-list {
+  margin-top: 20px;
+  .participant-detail {
+    height: 34px;
+    .participant-name {
+      margin-left: 10px;
+      color: #272727;
+      opacity: 0.8;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.title-modal-add-user {
+  font-weight: 700;
+  font-size: 18px;
+  color: #272727CC;
+}
+
+.add-more-input {
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%;
+  .ant-select-selector {
+    border-radius: 2px !important;
+    height: 40px;
+  }
+  .ant-select-selection-item {
+    border-radius: 2px !important;
+    height: 32px;
+    align-items: center;
+  }
+}
+
+input::placeholder {
+  color: #414346;
+}
+.ant-input:focus,
+.ant-input-focused {
+  box-shadow: none;
+}
+
+.ant-modal-header {
+  border-radius: 2px 2px 0 0;
+  padding: 17px 28px 13px 28px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.ant-modal-body {
+  border-radius: 0 0 2px 2px;
+}
+
+.ant-modal-content {
+  border-radius: 2px;
+  .ant-modal-close-x img {
+    filter: none;
+  }
+}
+
+.search-group-header {
+  display: flex;
+  .join-button {
+    height: 40px;
+    width: 160px;
+    background-color: #32A1C8;
+    border-radius: 2px;
+    margin-left: 25px;
+    color: #FFFFFF;
+    font-size: 16px;
+  }
+}

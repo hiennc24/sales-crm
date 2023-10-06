@@ -1,0 +1,86 @@
+@import "../../../../styles/variables.scss";
+
+.col-group-info {
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 13px 15px;
+  margin-bottom: 20px;
+
+  .title-owner {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #272727CC;
+  }
+
+  .user-item {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+
+    .avt-member {
+      height: 35px;
+      width: 35px;
+    }
+
+    .user-name {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 21px;
+      margin-left: 12px;
+      color: #32A1C8;
+    }
+  }
+  .privacy-group-work {
+    margin-top: 16px;
+    border-top: 1px solid #e9f0f4;
+    border-bottom: 1px solid #e9f0f4;
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    .text-des-privacy {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      margin-top: 12px;
+      color: #27272799;
+    }
+
+    .text-privacy {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 13px;
+      // letter-spacing: -0.24px;
+      // color: #6E7B94;
+      color: #262b32;
+    }
+
+    .group-privacy-content {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .content-description {
+    margin-top: 16px;
+
+    .title-description-group {
+      font-weight: bold;
+      font-size: 14px;
+      color: #262b32;
+    }
+
+    .description-group {
+      font-size: 14px;
+      margin-top: 13px;
+      color: #27272799;
+    }
+  }
+
+  .horizontal {
+    display: flex;
+    align-items: center;
+  }
+}

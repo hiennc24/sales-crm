@@ -1,0 +1,112 @@
+@import "../../../../styles/variables.scss";
+
+.recent-news-title {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .recent-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #414346;
+  }
+
+  .recent-all {
+    font-weight: normal;
+    font-size: 14px;
+    color: #414346;
+    cursor: pointer;
+  }
+}
+
+.recent-news-list {
+  .recent-news-item {
+    padding: 12px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    .recent-news-info {
+      .group-name {
+        font-size: 14px;
+        line-height: 16px;
+        color: #262B32;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 0;
+        color: #414346;
+        max-width: 95%;
+      }
+      .new-post{
+        font-size: 12px;
+        line-height: 14px;
+        color: #0498C1;
+        
+      }
+    }
+
+    .recent-news-action {
+      span {
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .recent-news-item + .recent-news-item {
+    margin-top: 10px;
+  }
+
+  .recent-news-image {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #6e7b94;
+    border-radius: 35px;
+    max-width: 35px;
+
+  }
+  .see-more {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .btn-see-more {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #414346;
+    }
+  }
+}
+
+.list-group-vertical {
+  .group-input {
+    background-color: #ffffff;
+    border: 1px solid rgba(65, 67, 70, 0.05);
+    border-radius: 10px;
+    box-shadow: none !important;
+  }
+  .recent-text {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #262b32;
+  }
+  .recent-news-list {
+    border-radius: 10px;
+    .recent-news-item {
+      margin-top: 1px;
+      border-radius: 0;
+    }
+    .recent-news-item:first-child{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .recent-news-item:last-child{
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+  }
+}

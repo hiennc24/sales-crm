@@ -1,0 +1,85 @@
+.register-form {
+  margin: auto;
+  margin-top: 20px !important;
+
+  @media (max-width: 1366px) {
+    margin-top: -20px !important;
+    width: 90% !important;
+  }
+
+  @media (max-width: 1176px) {
+    margin-top: 0 !important;
+    width: 78%;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 0 !important;
+    width: 70%;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 0 !important;
+    width: 100%;
+  }
+}
+
+.policy-content-register {
+
+  width: 60%;
+  margin: 0 auto;
+  @media (max-width: 1366px) {
+    margin-top: -20px !important;
+    width: 90% !important;
+  }
+
+  @media (max-width: 1176px) {
+    margin-top: 0 !important;
+    width: 78%;
+  }
+
+  @media (max-width: 991px) {
+    margin-top: 0 !important;
+    width: 70%;
+  }
+
+  @media (max-width: 576px) {
+    margin-top: 0 !important;
+    width: 100%;
+  }
+
+  p {
+    align-items: center;
+
+    a{
+      color: #fff;
+    }
+  }
+}
+
+.email-wrapper {
+  & .title {
+    color: #414346;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  & .error {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.remember {
+  padding-left: 2%;
+}
+.btn-submit {
+  width: 100%;
+}
+
+.form-policy {
+  margin-bottom: 1em;
+  .form-checkbox {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../../styles/variables.scss";
+
+.financy-slice{
+    // margin-top: 20px;
+    // height: 225px;
+    width: 100%;
+    background-color: #f3f4f6;
+    &__header{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        &--item{
+            background-color: $athens-gray;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+            color: #272727cc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            &:first-child{
+                border-top-left-radius: 2px;
+            }
+            &:last-child{
+                border-top-right-radius: 2px;
+            }
+        }
+        .active{
+            color: #32A1C8;
+            background-color: #FFF;
+        }
+    }
+    &__body{
+        // height: 185px;
+        background-color: #FFF;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        &--tab3{
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+    }
+}

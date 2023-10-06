@@ -1,0 +1,58 @@
+@import "../../styles/variables.scss";
+
+.calendar-group-page {
+  .title-setting-noti {
+    white-space: nowrap;
+  }
+}
+
+.setting-noti-page {
+  .setting-noti-board {
+    padding: 16px 0;
+    padding-bottom: 75px;
+    border-radius: 10px;
+    background-color: #fff;
+    .setting-noti-header {
+      border-bottom: 1px solid #e9f0f4;
+      padding-bottom: 16px;
+      padding-left: 20px;
+
+      .title {
+        margin-bottom: 0;
+        color: $dark-blue;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+    .setting-noti-body {
+      .setting-item {
+        padding: 20px 38px 20px 23px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e9f0f4;
+        &:last-child {
+          border-bottom: none;
+        }
+        .setting-item-icon {
+          display: flex;
+          align-items: center;
+          img {
+            margin-right: 14px;
+          }
+          span {
+            color: $text-grey;
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+    .loading-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+    }
+  }
+}

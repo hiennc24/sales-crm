@@ -1,0 +1,24 @@
+.delete-chat-modal{
+    width: 500px !important;
+    min-width: 0;
+    .delete-modal-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ant-modal-content {
+        border-radius: 2px;
+        padding: 20px;
+
+    }
+    .ant-modal-header {
+        display: none;
+    }
+    .ant-modal-close {
+        display: none;
+    }
+    .ant-modal-footer{
+        display: flex;
+        justify-content: center;
+    }
+}

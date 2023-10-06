@@ -1,0 +1,98 @@
+@import "../../styles/variables.scss";
+
+.notification-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  position: relative;
+  background-color: #f6f9fb;
+
+  &:hover {
+    background-color: white;
+  }
+
+  &.read {
+    background-color: white;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+
+  .notification-item-avatar {
+    position: relative;
+
+    .span-type {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .notification-item-name {
+    .name {
+      color: #4e596f;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .time {
+      margin-left: 12px;
+      color: #414346;
+      font-size: 12px;
+    }
+  }
+
+  .notification-item-info {
+    span {
+      font-size: 12px;
+      color: #4e596f;
+    }
+  }
+
+  .notification-item-more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.noti-item-dropdown-overlay {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(65, 67, 70, 0.1);
+  overflow: hidden;
+
+  .ant-menu-inline,
+  .ant-menu-vertical,
+  .ant-menu-vertical-left {
+    border-right: none !important;
+  }
+
+  .ant-menu-item {
+    color: #414346;
+    margin-bottom: 4px;
+
+    .noti-item-dropdown-text {
+      margin-left: 10px;
+      color: #414346;
+    }
+
+    &:hover {
+      .ant-menu-title-content {
+        color: #414346;
+      }
+
+      background-color: #f6f9fb;
+    }
+  }
+}

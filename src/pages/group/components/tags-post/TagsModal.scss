@@ -1,0 +1,68 @@
+@import "../../../../styles/variables.scss";
+.tag-modal {
+    color: $text-grey;
+    .ant-modal-body{
+        padding: 10px 26px 50px 26px;
+    }
+  
+    .tag-modal-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      & h4 {
+        color: $dark-blue;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+  
+  
+      & .tag-search {
+        width: 300px;
+        margin-right: 30px;
+        border: 1px solid hsla(219, 15%, 51%, 0.11);
+        border-radius: 10px;
+        padding: 8px;
+      }
+    }
+  
+    & h5 {
+      font-size: 18px;
+      color: $text-grey;
+      margin-bottom: 0;
+    }
+  
+    & .tag-select {
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  
+    & .location-select-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+  
+      &.selected {
+        color: $dark-blue;
+      }
+  
+      .ant-modal-body {
+        padding: 0 !important;
+      }
+  
+      & .location-select {
+        display: flex;
+        align-items: center;
+  
+        & p {
+          margin-bottom: 0;
+        }
+  
+        & img[alt="location"] {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  

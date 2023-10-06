@@ -1,0 +1,218 @@
+.login-layout {
+  height: 100vh;
+  background: url("../../assets/new/login/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .ant-row {
+    height: 100%;
+  }
+
+  .login-banner {
+    background: url("../../assets/new/login/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .login-form-col {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+
+    .login-form {
+      height: 100%;
+      padding: 50px 30px;
+      .not-have-account {
+        text-align: center;
+        // position: absolute;
+        // bottom: 40px;
+        width: 100%;
+        left: 0px;
+        span {
+          color: #272727;
+          font-size: 14px;
+
+          a {
+            color: #FEA800 !important;
+            font-weight: bold;
+            font-size: 14px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        &.mobile {
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+
+      .has-account {
+        width: 100%;
+        text-align: center;
+        // margin-bottom: 30px;
+        span {
+          color: #414346;
+          font-size: 16px;
+
+          a {
+            color: #0498c1;
+          }
+        }
+
+        &.mobile {
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+
+      .form {
+        width: 60%;
+        margin: auto;
+        margin-top: 120px;
+        // margin-bottom: 50px;
+
+        @media (max-width: 1366px) {
+          margin-top: 40px;
+          width: 70%;
+        }
+
+        @media (max-width: 1176px) {
+          width: 78%;
+        }
+
+        @media (max-width: 991px) {
+          width: 70%;
+        }
+
+        @media (max-width: 576px) {
+          margin-top: 30px;
+          width: 100%;
+        }
+
+        h3 {
+          font-weight: bold;
+          color: #414346;
+
+          &.forgot {
+            color: #272727;
+            margin-top: 50px;
+          }
+
+          span {
+            font-size: 22px;
+            position: relative;
+            margin-right: 5px;
+          }
+        }
+
+        .login-social {
+          // display: flex;
+          align-items: center;
+          margin-bottom: 40px;
+
+          @media (max-width: 576px) {
+            margin-bottom: 30px;
+          }
+        }
+
+        form {
+          label {
+            color: #414346;
+            font-weight: bold;
+            font-size: 18px;
+          }
+
+          input {
+            // background: rgba(65, 67, 70, 0.05);
+            background-color: #FFFFFF;
+            border-radius: 2px;
+            padding: 11px;
+            font-size: 14px;
+            margin-top: 20px;
+            border: none !important;
+            box-shadow: none !important;
+          }
+
+          .ant-checkbox-wrapper {
+            span {
+              font-weight: normal;
+              font-size: 14px;
+            }
+          }
+
+          .ant-checkbox-inner {
+            background-color: #ffffff;
+            border-color: #0498c1;
+          }
+
+          .ant-checkbox-checked::after {
+            border: 1px solid #0498c1;
+          }
+
+          .ant-checkbox-checked .ant-checkbox-inner::after {
+            border: 2px solid #0498c1;
+            border-top: 0;
+            border-left: 0;
+          }
+
+          a {
+            color: #0498c1;
+          }
+
+          .password-wrapper {
+            position: relative;
+            margin-bottom: 20px;
+
+            .forget-password {
+              font-size: 14px;
+              font-style: italic;
+              position: absolute;
+              top: 0;
+              right: 0;
+              cursor: pointer;
+              color: #414346;
+            }
+          }
+
+          .btn-submit {
+            background: #0498c1;
+            box-shadow: 0px 5px 15px rgba(87, 183, 235, 0.2);
+            border-radius: 2px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 224px;
+            padding: 0 32px;
+            height: 40px;
+            border: none !important;
+            box-shadow: 0px 5px 15px rgba(87, 183, 235, 0.2);
+
+            @media (max-width: 576px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .error {
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
+  }
+
+  .copyright {
+    color: #868686;
+    margin-top: 24px;
+  }
+
+  .description {
+    color: #6e7b94;
+    margin-bottom: 24px;
+  }
+}

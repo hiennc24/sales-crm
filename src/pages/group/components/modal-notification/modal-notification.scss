@@ -1,0 +1,44 @@
+.customModalSearch {
+  .custom__radio--noti {
+    .ant-radio-inner {
+      width: 20px;
+      height: 20px;
+      border-width: 1px;
+      &:after {
+        width: 16px;
+        height: 16px;
+        top: 1px;
+        left: 1px;
+        background-color: #0498c1;
+      }
+    }
+    .ant-radio-checked {
+      .ant-radio-inner {
+        border-color: #0498c1;
+      }
+    }
+  }
+
+  .group__custom--switch {
+    &.ant-switch-checked {
+      background-color: #0498c1;
+    }
+  }
+
+  .group__btn--save {
+    width: 79px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background: #0498c1;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background: #0498c1;
+    }
+  }
+}

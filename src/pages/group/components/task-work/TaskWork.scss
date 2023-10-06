@@ -1,0 +1,142 @@
+@import "../../../../styles/variables.scss";
+
+.task-group-page {
+  .empty-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 42px;
+
+    .text-empty {
+      font-family: "Open Sans";
+      font-size: 15px;
+      align-items: center;
+      color: #6e7b94;
+      margin-top: 21px;
+    }
+
+    .icon-empty {
+      height: 92px;
+      width: 190px;
+    }
+  }
+
+  .item-task-group {
+    background: #ffffff;
+    box-shadow: 0px 5px 15px rgba(110, 123, 148, 0.1);
+    border-radius: 15px;
+    padding: 13px 28px 16px 13px;
+    margin-top: 19px;
+    .item-task-info {
+      width: 100%;
+      .task-header {
+        display: flex;
+        align-items: flex-start;
+
+        & :first-child {
+          display: flex;
+          align-items: center;
+        }
+
+        .more-actions {
+          display: flex;
+          align-items: center;
+          margin-top: 14px;
+          margin-left: auto;
+          & > img {
+            margin-left: 10px;
+          }
+        }
+        & .avatar-wrapper {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: none;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+        & .name-wrapper {
+          display: flex;
+          align-items: center;
+          & h4 {
+            font-size: $font-size-h6;
+            color: $dark-blue;
+            margin-bottom: 0;
+            margin-right: 10px;
+          }
+          & p {
+            margin-bottom: 0;
+            margin-left: 10px;
+            font-size: 16px;
+          }
+          .group-name {
+            font-size: 16px;
+            font-weight: bold;
+          }
+          .user-name {
+            color: #292d32d9;
+            font-size: 16px;
+            font-weight: bolder;
+            margin-left: 0px;
+            cursor: pointer;
+          }
+        }
+
+        & .post-status {
+          display: flex;
+          align-items: center;
+
+          & > img {
+            margin-left: 10px;
+          }
+        }
+      }
+      .task-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #292d32;
+        margin: 16px 0 8px 0;
+      }
+      .task-checkbox-list {
+        .task-checkbox-item {
+          margin-bottom: 16px;
+          .ant-checkbox-wrapper {
+            width: 100%;
+            .ant-checkbox-checked::after {
+              border: 1px solid #0275b1;
+              border-radius: 5px;
+            }
+            .ant-checkbox-checked .ant-checkbox-inner {
+              background-color: #0275b1;
+              border-color: #0275b1;
+            }
+            .ant-checkbox-inner {
+              border-radius: 5px;
+            }
+            span:last-child {
+              flex-grow: 1;
+            }
+            .checkbox-label {
+              border: 1px solid rgba(65, 67, 70, 0.1);
+              box-sizing: border-box;
+              border-radius: 5px;
+              padding: 8px 16px;
+              &.checked {
+                background: rgba(4, 152, 193, 0.1);
+                border: 1px solid rgba(4, 152, 193, 0.5);
+              }
+            }
+          }
+          .task-add-option {
+            margin-left: 23px;
+            width: calc(100% - 30px);
+            border-radius: 5px;
+            border: 1px solid rgba(65, 67, 70, 0.1);
+            padding: 8px 16px;
+          }
+        }
+      }
+    }
+  }
+}
